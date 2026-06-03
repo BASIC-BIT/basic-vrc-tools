@@ -1,0 +1,20 @@
+{
+  "name": "net.basicbit.vrc-tools",
+  "displayName": "BASIC VRC Tools",
+  "version": "0.1.0",
+  "unity": "2022.3",
+  "description": "Small Unity editor tools for VRChat avatar creation workflows.",
+  "keywords": [
+    "vrchat",
+    "vpm",
+    "avatar",
+    "armature",
+    "editor"
+  ],
+  "author": {
+    "name": "BASIC-BIT",
+    "email": "basic@basicbit.net",
+    "url": "https://basicbit.net"
+  },
+  "license": "MIT"
+}
