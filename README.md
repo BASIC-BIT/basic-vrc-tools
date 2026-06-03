@@ -1,6 +1,6 @@
 # BASIC VRC Tools
 
-Unity editor tools for BASIC's VRChat avatar creation workflows, distributed as a VPM package.
+BASIC's VRChat creator toolchain, distributed as a VPM package.
 
 ## Package
 

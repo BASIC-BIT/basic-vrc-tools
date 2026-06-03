@@ -1,6 +1,6 @@
 # BASIC VRC Tools
 
-Small Unity editor tools for VRChat avatar creation workflows.
+BASIC's VRChat creator toolchain.
 
 ## Armature Pose Fixer
 

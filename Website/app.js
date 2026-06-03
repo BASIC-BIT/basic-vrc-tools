@@ -1,6 +1,6 @@
 import { baseLayerLuminance, StandardLuminance } from 'https://unpkg.com/@fluentui/web-components';
 
-const LISTING_URL = "{{ listingInfo.Url }}";
+const LISTING_URL = "https://vpm.basicbit.net/index.json";
 
 const PACKAGES = {
 {{~ for package in packages ~}}
@@ -89,6 +89,9 @@ const setTheme = () => {
 
   const vccAddRepoButton = document.getElementById('vccAddRepoButton');
   vccAddRepoButton.addEventListener('click', () => window.location.assign(`vcc://vpm/addRepo?url=${encodeURIComponent(LISTING_URL)}`));
+
+  const alcomAddRepoButton = document.getElementById('alcomAddRepoButton');
+  alcomAddRepoButton.addEventListener('click', () => window.location.assign(`vcc://vpm/addRepo?url=${encodeURIComponent(LISTING_URL)}`));
 
   const vccUrlFieldCopy = document.getElementById('vccUrlFieldCopy');
   vccUrlFieldCopy.addEventListener('click', () => {
