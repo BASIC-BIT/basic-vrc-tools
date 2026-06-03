@@ -140,57 +140,38 @@ h1 {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 90%;
-  min-height: 14rem;
+  min-height: 11rem;
   margin-bottom: 0.75rem;
-  padding: 2.5rem;
-  border: 1px solid rgba(120, 232, 255, 0.32);
-  border-radius: 14px;
+  padding: 2rem;
+  border: 1px solid rgba(116, 247, 255, 0.16);
+  border-radius: 10px;
   background:
-    radial-gradient(circle at 18% 18%, rgba(95, 246, 255, 0.34), transparent 30%),
-    radial-gradient(circle at 84% 72%, rgba(255, 73, 226, 0.26), transparent 34%),
-    linear-gradient(135deg, #080a16 0%, #11183f 44%, #31135a 100%);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42), inset 0 0 42px rgba(110, 226, 255, 0.12);
-  text-align: left;
+    radial-gradient(circle at 50% 50%, rgba(55, 74, 130, 0.28), transparent 54%),
+    linear-gradient(135deg, #07080d 0%, #101421 52%, #080910 100%);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36), inset 0 0 30px rgba(116, 247, 255, 0.06);
+  text-align: center;
 }
 
 .basicBanner::before {
   position: absolute;
-  inset: -40%;
+  inset: 0;
   z-index: -1;
   content: "";
-  background:
-    linear-gradient(90deg, transparent 0 47%, rgba(255, 255, 255, 0.08) 48% 52%, transparent 53% 100%),
-    linear-gradient(0deg, transparent 0 47%, rgba(255, 255, 255, 0.06) 48% 52%, transparent 53% 100%);
-  background-size: 56px 56px;
-  transform: rotate(-9deg);
-  mask-image: radial-gradient(circle at 50% 50%, #000 0%, transparent 68%);
-}
-
-.basicBannerKicker {
-  color: #74f7ff;
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  background: linear-gradient(90deg, transparent, rgba(116, 247, 255, 0.08), transparent);
 }
 
 .basicBannerTitle {
-  margin-top: 0.45rem;
-  color: #ffffff;
-  font-size: clamp(2.4rem, 7vw, 5.3rem);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.07em;
-  text-shadow: 0 0 28px rgba(116, 247, 255, 0.38);
-}
-
-.basicBannerSubtitle {
-  max-width: 32rem;
-  margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(2.25rem, 6vw, 4.75rem);
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  text-shadow: 0 0 20px rgba(116, 247, 255, 0.18);
 }
 
 @media (max-width: 700px) {
@@ -199,7 +180,7 @@ h1 {
   }
 
   .basicBanner {
-    min-height: 11rem;
+    min-height: 8rem;
     padding: 1.5rem;
   }
 }
